@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="İçimdeki Öykü — Güvenli, sakin ve kişiye özgü online psikolojik danışmanlık ve kişisel gelişim süreci.">
+  <meta name="theme-color" content="#F9F7F2">
+  <title>İçimdeki Öykü | Psikolojik Danışmanlık & Kişisel Gelişim</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Open Graph / Sosyal Medya Paylaşımı -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="İçimdeki Öykü | Psikolojik Danışmanlık">
+  <meta property="og:description" content="Psikolojik danışmanlık, online seanslar ve kişisel gelişim odağında kendini keşfetmeye alan açan editoryal bir yaklaşım.">
+  <meta property="og:url" content="https://icimdeki-oyku.web.app/">
+  <meta property="og:image" content="assets/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tipografi (Playfair Display + Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Ana Stil Dosyası -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ÜST MENÜ / NAVİGASYON (Minimalist Studio Header)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand" aria-label="İçimdeki Öykü Ana Sayfa">
+        <img src="assets/logo.webp" alt="İçimdeki Öykü logosu" class="brand-logo" width="42" height="42">
+        <div class="brand-text">
+          <span class="brand-title">içimdeki öykü</span>
+          <span class="brand-subtitle">Psikolojik Danışmanlık</span>
+        </div>
+      </a>
+
+      <!-- Masaüstü Navigasyon -->
+      <nav class="nav-menu" aria-label="Ana Menü">
+        <a href="#hero" class="nav-link active" data-section="hero">Ana Sayfa</a>
+        <a href="#hakkinda" class="nav-link" data-section="hakkinda">Hakkında</a>
+        <a href="#danismanlik" class="nav-link" data-section="danismanlik">Danışmanlık</a>
+        <a href="#surec" class="nav-link" data-section="surec">Süreç</a>
+        <a href="#iletisim" class="nav-link" data-section="iletisim">İletişim</a>
+      </nav>
+
+      <!-- Sağ Eylem Butonu -->
+      <div class="header-actions">
+        <a href="#iletisim" class="btn btn-primary desktop-cta">İlk Adımı At</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç veya kapat" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round">
+            <line x1="3" y1="7" x2="21" y2="7"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="17" x2="21" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Menü Çekmecesi (Header Dışında, Doğrudan Body Altında - Örtüşme & Saydamlık Hatası Çözüldü) -->
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobil Menü">
+    <a href="#hero" class="mobile-nav-link active">Ana Sayfa <span>→</span></a>
+    <a href="#hakkinda" class="mobile-nav-link">Hakkında <span>→</span></a>
+    <a href="#danismanlik" class="mobile-nav-link">Danışmanlık <span>→</span></a>
+    <a href="#surec" class="mobile-nav-link">Süreç <span>→</span></a>
+    <a href="#iletisim" class="mobile-nav-link">İletişim <span>→</span></a>
+
+    <div class="mobile-drawer-footer">
+      <a href="tel:+905338437890" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0533 843 78 90
+      </a>
+      <a href="#iletisim" class="btn btn-primary">Görüşme Planla</a>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       HERO BÖLÜMÜ (Büyük Editoryal Tipografi & Sade Mimari Çerçeve)
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <span class="mono-tag" style="margin-bottom: 20px;">Psikolojik Danışmanlık • Online Seanslar</span>
+        
+        <h1 class="hero-title">
+          İçindeki <em>öyküyü</em> fark et, kendi ritmine alan aç.
+        </h1>
+
+        <p class="hero-description">
+          Bazen değişim, yalnızca kendine daha yakından bakabildiğin sakin ve güvenli bir alanla başlar. Mekandan bağımsız online danışmanlıkla bu içsel yolculukta sana eşlik ediyoruz.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#iletisim" class="btn btn-primary">
+            İletişime Geç
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#danismanlik" class="btn btn-secondary">
+            Danışmanlık Sürecini Keşfet ↓
+          </a>
+        </div>
+
+        <div class="hero-trust-badges">
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Mekandan Bağımsız Online Seanslar</span>
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Bireysel & Gizlilik Odaklı Yaklaşım</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Marka Kartı (Sade, Vakur & Profesyonel) -->
+      <div class="hero-visual reveal">
+        <div class="hero-brand-card">
+          <div class="hero-logo-box">
+            <img src="assets/logo.webp" alt="İçimdeki Öykü amblemi" class="hero-brand-logo" width="124" height="124">
+          </div>
+          <p class="hero-brand-quote">“İçindeki öykü, duyulmayı hak eder.”</p>
+          <span class="hero-brand-caption">Bireysel Online Danışmanlık</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 2: MARKA & FELSEFE (Editoryal Yaklaşım Bildirgesi)
+       ========================================================================= -->
+  <section class="section section-warm" id="hakkinda">
+    <div class="container">
+      <div class="editorial-statement-box reveal">
+        <span class="mono-tag" style="margin-bottom: 20px;">Yaklaşım & Felsefe</span>
+        <blockquote class="editorial-quote">
+          “Her öykünün <em>ritmi</em>, ihtiyacı ve anlamı kendine özgüdür.”
+        </blockquote>
+      </div>
+
+      <div class="editorial-asym-grid">
+        <div class="reveal">
+          <h2 class="asym-heading">
+            Merkeze seni koyan, yönlendirmeyen, dinleyen bir süreç.
+          </h2>
+        </div>
+        <div class="asym-prose reveal">
+          <p>
+            Danışmanlık sürecinde amaç, sana ne yapman gerektiğini dikte etmek değil; yaşantılarını daha yakından inceleyebileceğin, düşüncelerini özgürce ifade edebileceğin ve kendi cevaplarına yaklaşabileceğin güvenli bir zemin oluşturmaktır.
+          </p>
+          <p>
+            Her bireyin yaşam öyküsü, getirdiği konular ve derinleşme hızı farklıdır. İçimdeki Öykü; online psikolojik danışmanlık odağında görüşme koşullarını ve uygun seans zamanını iletişim sırasında birlikte şeffaflıkla netleştiren bir çalışma biçimini benimser.
+          </p>
+          <div>
+            <a href="#danismanlik" class="btn-text">
+              Danışmanlık çalışma biçimini incele <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 3: KENDİNİ KEŞFETME FAZLARI (Geniş Editoryal Fazlar)
+       ========================================================================= -->
+  <section class="section" id="kesif">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="mono-tag" style="margin-bottom: 16px;">İçsel Farkındalık</span>
+        <h2 class="section-title">Kendini anlamaya açılan sakin bir alan.</h2>
+        <p class="section-desc">
+          Psikolojik danışmanlık; hazır cevaplar sunmaktan çok, yaşadıklarını anlamlandırmana ve kendi kaynaklarını fark etmene yardımcı olan bir süreçtir.
+        </p>
+      </div>
+
+      <div class="discovery-phases">
+        <!-- Faz 01 -->
+        <article class="phase-panel reveal">
+          <span class="phase-num">01</span>
+          <h3 class="phase-title">Fark Etmek</h3>
+          <p class="phase-text">
+            Düşüncelerini, duygularını ve hayatında tekrar eden örüntülerini daha berrak, sakin ve yargısız bir gözle görmeye alan açarsın.
+          </p>
+        </article>
+
+        <!-- Faz 02 -->
+        <article class="phase-panel reveal">
+          <span class="phase-num">02</span>
+          <h3 class="phase-title">Anlamlandırmak</h3>
+          <p class="phase-text">
+            Yaşantılar arasında bağ kurarak sana neyin iyi geldiğini, neyin zorladığını ve içindeki dönüştürücü kaynakları keşfedersin.
+          </p>
+        </article>
+
+        <!-- Faz 03 -->
+        <article class="phase-panel reveal">
+          <span class="phase-num">03</span>
+          <h3 class="phase-title">İlerlemek</h3>
+          <p class="phase-text">
+            Kendi gerçek ihtiyaçlarınla daha uyumlu seçimler yapabilmek için hayatındaki adımları bilinçli ve şefkatle şekillendirirsin.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 4: DANIŞMANLIK HİZMETLERİ (Geniş Yatay Editoryal Paneller)
+       ========================================================================= -->
+  <section class="section section-warm" id="danismanlik">
+    <div class="container services-layout">
+      <div class="services-intro-sticky reveal">
+        <span class="mono-tag" style="margin-bottom: 16px;">Çalışma Biçimi</span>
+        <h2 class="section-title">Yaşadıklarına başka bir yerden bakabilmek için.</h2>
+        <p class="section-desc">
+          Psikolojik danışmanlık; düşünceler, duygular ve yaşam deneyimleri üzerinde güvenli bir çerçevede çalışmayı mümkün kılan profesyonel bir görüşme sürecidir.
+        </p>
+        <div style="margin-top: 26px;">
+          <a href="#iletisim" class="btn btn-primary">Görüşme Talebi Oluştur</a>
+        </div>
+      </div>
+
+      <div class="services-panel-list">
+        <!-- Hizmet 1 -->
+        <article class="service-horizontal-panel reveal">
+          <div class="service-header-row">
+            <span class="service-badge">Online Danışmanlık</span>
+          </div>
+          <h3>Online Psikolojik Danışmanlık</h3>
+          <p>
+            Mesafe veya yoğun tempo engeline takılmadan, bulunduğunuz konforlu ortamdan katılabileceğiniz online seanslarla; danışmanlık sürecine erişim için esnek, şeffaf ve güvenli bir zemin sunulur.
+          </p>
+          <div class="service-features-list">
+            <div class="service-feature">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Bulunduğun şehirden veya ülkeden bağımsız konforlu katılım</span>
+            </div>
+            <div class="service-feature">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Zamandan tasarruf sağlayan, planlı ve düzenli görüşmeler</span>
+            </div>
+            <div class="service-feature">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Bireysel gizlilik ve güvenli seans ortamı</span>
+            </div>
+          </div>
+          <a href="#iletisim" class="btn-text">Seans planlaması için yazın <span>→</span></a>
+        </article>
+
+        <!-- Hizmet 2 -->
+        <article class="service-horizontal-panel reveal">
+          <div class="service-header-row">
+            <span class="service-badge">Kişisel Gelişim</span>
+          </div>
+          <h3>Kişisel Farkındalık & İçsel Süreç</h3>
+          <p>
+            İçsel süreçleri, ilişkileri ve yaşam geçişlerini daha bütünlüklü ele alabilmek için kişiye özel yapılandırılmış görüşmeler.
+          </p>
+          <div class="service-features-list">
+            <div class="service-feature">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Tek tip kalıplar yerine getirdiğin konulara göre şekillenen akış</span>
+            </div>
+            <div class="service-feature">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>İçsel kaynaklarını ve sınırlarını daha derinlemesine fark etme</span>
+            </div>
+            <div class="service-feature">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Yargısız, sakin ve tamamen sana ayrılmış bir dinleme alanı</span>
+            </div>
+          </div>
+          <a href="#iletisim" class="btn-text">Sorularınız için ulaşın <span>→</span></a>
+        </article>
+
+        <!-- Bilgilendirme Notu -->
+        <div class="disclaimer-box reveal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p>
+            <strong>Bilgilendirme:</strong> Bu web sitesi tanı, teşhis veya tıbbi tedavi niteliğinde bir klinik servis sunmaz; profesyonel çerçevede yürütülen psikolojik danışmanlık ve kişisel farkındalık rehberliği sağlar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 5: SÜREÇ NASIL İLERLER? (Scroll İlerleme Çizelgesi)
+       ========================================================================= -->
+  <section class="section" id="surec">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="mono-tag" style="margin-bottom: 16px;">Görüşme Akışı</span>
+        <h2 class="section-title">İlk mesajdan görüşmeye, sade ve anlaşılır.</h2>
+        <p class="section-desc">
+          Danışmanlık sürecine başlamak için karmaşık bir kayıt prosedürü yerine doğrudan, şeffaf ve güven veren bir adımlama.
+        </p>
+      </div>
+
+      <div class="timeline-track-wrap">
+        <!-- Dikey İlerleme Çizgisi -->
+        <div class="timeline-progress-bar">
+          <div class="timeline-progress-fill" id="timelineFill"></div>
+        </div>
+
+        <!-- Adım 1 -->
+        <div class="timeline-step-row reveal" data-step="1">
+          <div class="step-circle">01</div>
+          <div class="step-content-card">
+            <h4>İletişime Geçin</h4>
+            <p>Telefon veya WhatsApp üzerinden danışmanlık hakkında bilgi almak istediğinizi kısa bir mesajla iletin.</p>
+          </div>
+        </div>
+
+        <!-- Adım 2 -->
+        <div class="timeline-step-row reveal" data-step="2">
+          <div class="step-circle">02</div>
+          <div class="step-content-card">
+            <h4>Uygunluğu Konuşun</h4>
+            <p>Online görüşme akışı, takvim ve size uygun seans zamanı karşılıklı iletişimle netleştirilir.</p>
+          </div>
+        </div>
+
+        <!-- Adım 3 -->
+        <div class="timeline-step-row reveal" data-step="3">
+          <div class="step-circle">03</div>
+          <div class="step-content-card">
+            <h4>Görüşmeye Hazırlanın</h4>
+            <p>Online seans için kendinizi rahatça ifade edebileceğiniz, sakin, özel ve sessiz bir ortam belirleyin.</p>
+          </div>
+        </div>
+
+        <!-- Adım 4 -->
+        <div class="timeline-step-row reveal" data-step="4">
+          <div class="step-circle">04</div>
+          <div class="step-content-card">
+            <h4>Birlikte Şekillendirin</h4>
+            <p>Görüşmelerin devamı ve sıklığı, ihtiyaçlarınız ve sürecin doğal akışı doğrultusunda güvenle ele alınır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 6: GÜVEN VE İLKELER BANDI (Derin Doğa Zemin)
+       ========================================================================= -->
+  <section class="section" style="padding-top: 0;" id="guven">
+    <div class="container">
+      <div class="trust-banner-nature reveal">
+        <div class="trust-banner-grid">
+          <div>
+            <span class="mono-tag" style="color: var(--secondary); margin-bottom: 14px;">Güven & İlkeler</span>
+            <h3>Mesafe, kendine ayırdığın alanın önüne geçmesin.</h3>
+          </div>
+          <div class="trust-principles-grid">
+            <div class="principle-item">
+              <b>Gizlilik & Mahremiyet</b>
+              <p>Tüm paylaşımlarınız etik standartlar ve danışan mahremiyeti çerçevesinde gizli tutulur.</p>
+            </div>
+            <div class="principle-item">
+              <b>Yargısız Kabul</b>
+              <p>Kalıpların ötesinde, olduğun halinle duyulduğun sakin ve güvenli bir dinleme alanı.</p>
+            </div>
+            <div class="principle-item">
+              <b>Kişiye Özgü Akış</b>
+              <p>Ezber reçeteler yerine, senin ihtiyaçların ve yaşam ritmine göre şekillenen bir yolculuk.</p>
+            </div>
+            <div class="principle-item">
+              <b>Erişilebilir Destek</b>
+              <p>Nerede olursan ol, güvenle bağlanabileceğin kesintisiz online görüşme kolaylığı.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 7: BÜYÜK EYLEM ÇAĞRISI (Mimari CTA)
+       ========================================================================= -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="cta-box-architectural reveal">
+        <span class="mono-tag" style="margin-bottom: 14px;">İlk Adım</span>
+        <h2>İçindeki öyküyü dinlemeye hazır mısın?</h2>
+        <p>
+          İlk adım bazen sadece kısa bir mesajdır. Süreç hakkında sorularınızı sormak veya uygunluk durumunu öğrenmek için dilediğiniz zaman ulaşabilirsiniz.
+        </p>
+        <div class="cta-btn-group">
+          <a href="https://wa.me/905338437890?text=Merhaba%20%C4%B0%C3%A7imdeki%20%C3%96yk%C3%BC%2C%20psikolojik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            WhatsApp ile Yazın
+          </a>
+          <a href="tel:+905338437890" class="btn btn-secondary">
+            Telefon ile Arayın: 0533 843 78 90
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BÖLÜM 8: İLETİŞİM & RANDEVU (Doğrudan Hat & WhatsApp Mesaj Formu)
+       ========================================================================= -->
+  <section class="section section-warm" id="iletisim">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="mono-tag" style="margin-bottom: 14px;">İletişim & Randevu</span>
+        <h2 class="section-title">İlk adım, bazen yalnızca bir mesajdır.</h2>
+        <p class="section-desc">
+          Online psikolojik danışmanlık hakkında bilgi almak veya görüşme için doğrudan aşağıdaki kanalları kullanabilirsiniz.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Doğrudan İletişim Kanalları -->
+        <div class="contact-channels-panel reveal">
+          <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Doğrudan İletişim Kanalları</h3>
+          <p style="color: var(--text-muted); font-size: 0.94rem;">
+            Online danışmanlık ve görüşme planlaması için dilediğiniz zaman ulaşabilirsiniz.
+          </p>
+
+          <div class="contact-channels-list">
+            <!-- Telefon -->
+            <a href="tel:+905338437890" class="channel-card-link" title="Doğrudan arayın">
+              <div class="channel-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="channel-info">
+                <b>Telefon / Arama</b>
+                <span>0533 843 78 90</span>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/905338437890?text=Merhaba%20%C4%B0%C3%A7imdeki%20%C3%96yk%C3%BC%2C%20psikolojik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="channel-card-link" title="WhatsApp üzerinden yazın">
+              <div class="channel-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div class="channel-info">
+                <b>WhatsApp Mesajı</b>
+                <span>WhatsApp Üzerinden Yazın</span>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/icimdeki.oyku" target="_blank" rel="noopener noreferrer" class="channel-card-link" title="Instagram profilini ziyaret edin">
+              <div class="channel-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="channel-info">
+                <b>Instagram</b>
+                <span>@icimdeki.oyku</span>
+              </div>
+            </a>
+          </div>
+
+          <p style="font-size: 13px; color: var(--text-light); margin-top: auto;">
+            * Danışmanlık ve randevu uygunlukları karşılıklı yazışma ile belirlenmektedir.
+          </p>
+        </div>
+
+        <!-- İnteraktif WhatsApp Mesaj Formu -->
+        <div class="contact-form-panel reveal">
+          <div class="form-header-box">
+            <h3>Mesajınızı Hazırlayın</h3>
+            <p>Form mesajınızı WhatsApp için otomatik olarak hazırlar; göndermeden önce telefonunuzda kontrol edebilirsiniz.</p>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-field-group">
+              <label for="userName" class="form-label">Adınız ve Soyadınız</label>
+              <input type="text" id="userName" name="name" class="form-input" placeholder="Örn: Ayşe Yılmaz" required autocomplete="name">
+            </div>
+
+            <div class="form-field-group">
+              <label for="userMessage" class="form-label">Mesajınız / Notunuz</label>
+              <textarea id="userMessage" name="message" class="form-textarea" placeholder="Danışmanlık süreci hakkında bilgi almak istiyorum..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              WhatsApp Mesajını Hazırla ve Aç
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <div id="formStatus" class="form-status-msg" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER (Lüks Minimal Alt Bilgi)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="brand">
+          <img src="assets/logo.webp" alt="İçimdeki Öykü logosu" class="brand-logo" width="38" height="38">
+          <span class="brand-title">içimdeki öykü</span>
+        </a>
+        <p>
+          Psikolojik danışmanlık, online terapi seansları ve kişisel gelişim odağında kendini keşfetmeye alan açan butik ve güvenli bir yaklaşım.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sayfalar</h4>
+        <ul class="footer-links-list">
+          <li><a href="#hero">Ana Sayfa</a></li>
+          <li><a href="#hakkinda">Hakkında</a></li>
+          <li><a href="#danismanlik">Danışmanlık</a></li>
+          <li><a href="#surec">Süreç</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul class="footer-links-list">
+          <li><a href="tel:+905338437890">0533 843 78 90</a></li>
+          <li><a href="https://wa.me/905338437890" target="_blank" rel="noopener noreferrer">WhatsApp Hattı</a></li>
+          <li><a href="https://www.instagram.com/icimdeki.oyku" target="_blank" rel="noopener noreferrer">@icimdeki.oyku</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom-row">
+      <span>© 2026 İçimdeki Öykü. Tüm hakları saklıdır.</span>
+      <span>Güvenli & Gizli Online Psikolojik Danışmanlık</span>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       YÜZEN WHATSAPP BUTONU (Yalnızca İkon - Temiz ve Yuvarlak)
+       ========================================================================= -->
+  <a href="https://wa.me/905338437890?text=Merhaba%20%C4%B0%C3%A7imdeki%20%C3%96yk%C3%BC%2C%20psikolojik%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="WhatsApp üzerinden mesaj gönderin" title="WhatsApp ile İletişime Geçin">
+    <svg viewBox="0 0 24 24" width="28" height="28">
+      <path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.3 23.7l6.1-1.6A11.8 11.8 0 0 0 20.5 3.5Zm-8.4 17.1a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.6 1 1-3.5-.2-.4a9.8 9.8 0 1 1 8.1 4.4Zm5.4-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.4.2-.7.1-1.7-.8-2.9-1.5-4-3.4-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.6l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.5 3.8 6 5.3 2.2.9 3 .9 4.1.8.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.7.2-1.8-.1-.2-.3-.3-.6-.4Z"/>
+    </svg>
+  </a>
+
+  <!-- =========================================================================
+       JAVASCRIPT DOSYALARI
+       ========================================================================= -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
