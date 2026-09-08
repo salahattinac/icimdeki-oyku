@@ -1,45 +1,62 @@
-﻿# İçimdeki Öykü — Butik & Premium Web Sitesi
+﻿# 🌿 İçimdeki Öykü - Online Psikolojik Danışmanlık Web Platformu
 
-Psikolojik danışmanlık, online seanslar ve kişisel farkındalık odağında; **"Derin Doğa & Keten"** paleti, mimari köşe hatları (`8-12px`), **Playfair Display** editoryal başlıkları ve **Inter** gövde tipografisiyle özel olarak tasarlanmış modern web platformu.
+[![Geliştirici](https://img.shields.io/badge/Geliştirici-Salahattin%20Açıkgöz-FACC15?style=for-the-badge&logo=github&logoColor=black)](https://salahattin-portfolio.web.app)
+[![Canlı Web Sitesi](https://img.shields.io/badge/Canlı_Site-icimdeki--oyku.web.app-4A6B5D?style=for-the-badge&logo=firebase&logoColor=white)](https://icimdeki-oyku.web.app)
+[![Instagram](https://img.shields.io/badge/Instagram-@icimdeki.oyku-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/icimdeki.oyku)
 
-🌐 **Canlı Yayın:** [https://icimdeki-oyku.web.app](https://icimdeki-oyku.web.app)
-
----
-
-## 🎨 Tasarım Sistemi & Karakteri
-
-- **Renk Paleti (Palet A — Derin Doğa & Keten):**
-  - **Ana Vurgu:** `#243828` (Derin asil çam / orman yeşili)
-  - **İkincil Vurgu:** `#D9CFBE` (Sıcak yulaf / kum beji)
-  - **Zemin:** `#F9F7F2` (Sıcak keten beyazı / hafif dokulu)
-  - **Tipografi Rengi:** `#171B18` (Derin, yumuşak charcoal)
-- **Tipografi:**
-  - Başlıklar: Güven veren, dengeli ve oturaklı `Playfair Display` serif fontu.
-  - Gövde & Etiketler: Yüksek okunabilirlikli ve çağdaş `Inter`.
-- **Mimari Kart & Panel Yapısı:**
-  - 8–12px (`var(--radius): 10px`) köşeler.
-  - Standart 3'lü kutular yerine; geniş editoryal fazlar, yatay servis panelleri ve dikey çizelge.
-- **Hero Bölümü:**
-  - Dönen kesikli çizgilerden arındırılmış, mimari çerçeve, durum rozeti ve geniş nefes alan whitespace.
-- **Mikro Etkileşimler:**
-  - Zarif **Scroll Reveal** (yumuşak fade + translate Y).
-  - Süreç çizelgesinde scroll ile ilerleyen dinamik kılavuz çizgisi.
-  - Sağ alttaki WhatsApp butonunda hafif ve dikkat çeken dairesel ikon.
+Bu platform; **Salahattin Açıkgöz** tarafından modern web standartları, lüks minimalist tasarım ilkeleri ve yüksek performans odaklı mimariyle sıfırdan geliştirilmiş bir **Online Psikolojik Danışmanlık** web platformudur.
 
 ---
 
-## 📞 Gerçek İşletme Bilgileri
-
-- **Telefon:** `0533 843 78 90` (`+90 533 843 78 90`)
-- **Instagram:** `@icimdeki.oyku` (`https://www.instagram.com/icimdeki.oyku`)
-- **WhatsApp:** `+90 533 843 78 90`
+## 🌐 Canlı Web Sitesi
+Platformu canlı olarak incelemek için:  
+👉 **[https://icimdeki-oyku.web.app](https://icimdeki-oyku.web.app)**
 
 ---
 
-## 🚀 Canlı Dağıtım (Firebase Hosting)
+## 🚀 Proje & Mimari Özellikleri
 
-Sitenin güncel kodlarını yeniden yayına almak için:
+* **🎨 Butik & Sakinleştirici UI/UX Tasarımı:** Salahattin Açıkgöz tarafından danışan psikolojisine uygun pastel toprak tonları, akıcı tipografi ve modern estetikle özel olarak tasarlandı.
+* **📱 %100 Duyarlı (Responsive):** Masaüstü, tablet ve mobil cihazlarda sıfır kayma ile kusursuz görünüm.
+* **⚡ Ultra Hızlı Yükleme (Zero Dependency):** Ağır framework yükleri olmaksızın saf (vanilla) web teknolojileriyle milisaniyelik açılış hızı.
+* **💬 İnteraktif İletişim & Randevu Formu:** Ziyaretçilerin doğrudan Instagram DM üzerinden iletişime geçmesini sağlayan dinamik mesaj oluşturucu motoru.
+* **☁️ Bulut Altyapısı:** Google Firebase Hosting üzerinde 7/24 kesintisiz ve güvenli yayın.
 
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Alan | Teknoloji |
+| :--- | :--- |
+| **Geliştirici & Tasarım** | **Salahattin Açıkgöz** |
+| **Arayüz (Frontend)** | Modern Semantik HTML5 |
+| **Stil & Tema** | Modern CSS3 (CSS Variables, Flexbox & CSS Grid) |
+| **Dinamik Motor** | Vanilla JavaScript (ES6+ Asenkron Mimari) |
+| **Hosting & Dağıtım** | Google Firebase Hosting |
+
+---
+
+## 💻 Nasıl Çalıştırılır? (Yerel Kurulum)
+
+1. Bu repoyu bilgisayarınıza indirin veya klonlayın:
 ```bash
-npx -y firebase-tools deploy --only hosting
+git clone https://github.com/salahattinac/icimdeki-oyku.git
+
+İndirdiğiniz klasörü açın.
+index.html dosyasına çift tıklayarak herhangi bir modern web tarayıcısında doğrudan çalıştırın!
+👨‍💻 Geliştirici Bilgileri
+Salahattin Açıkgöz
+Yazılım Geliştirici & RPA Otomasyon Uzmanı
+
+🌐 Kişisel Portföy: salahattin-portfolio.web.app
+💼 LinkedIn: linkedin.com/in/salahattin-acikgoz
+🐙 GitHub: github.com/salahattinac
+Geliştirici: Salahattin Açıkgöz © 2026. Tüm hakları saklıdır.
+
+
+
+---
+Şimdi `README.md` olarak bunu yapıştırabilirsin. İmzan ve referansların tam yerinde! 🚀
+Peki repoda başka hangi dosyalar var? Ekran görüntüsünü at, sileceğimiz bir şey var mı bakalım!
+
 ```
