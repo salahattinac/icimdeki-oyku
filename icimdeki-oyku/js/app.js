@@ -7,7 +7,7 @@
 
   const phoneRaw = (typeof SITE_CONFIG !== "undefined" && SITE_CONFIG.phoneRaw)
     ? SITE_CONFIG.phoneRaw
-    : "905338437890";
+    : "905XXXXXXXXX";
 
   // 1. Sticky Header Durumu
   const header = document.getElementById("siteHeader");
